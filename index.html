@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lusory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "JetBrains Mono", monospace;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              width: {
+                'v80': '80vw',
+                'v40': '40vw',
+                'p300': '300px'
+              }
+            }
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="h-screen bg-zinc-900 flex justify-center items-center">
+      <div class="flex flex-col md:flex-row">
+        <div
+          class="bg-zinc-800 px-4 py-4 rounded w-v80 sm:w-v40 md:w-p300"
+        >
+          <h4 class="text-slate-100 text-2xl font-bold mb-2">relate</h4>
+          <p class="text-slate-200 text-sm mb-2">
+            a simple, unopinionated object mapper for Spring Data R2DBC, based
+            on lc-spring-data-r2dbc.
+          </p>
+          <a
+            href="https://docs.lusory.dev/relate"
+            class="font-semibold text-slate-800 bg-green-400 px-5 items-center mt-2 flex rounded-sm text-sm justify-center hover:scale-105 transition-all"
+            style="padding-top: 4px; padding-bottom: 4px;"
+            >visit</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
