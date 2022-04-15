@@ -23,6 +23,10 @@
       * {
         font-family: "JetBrains Mono", monospace;
       }
+
+      .card-content {
+          flex: 1 1 auto;
+      }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,10 +46,10 @@
   <body class="h-screen bg-zinc-900 flex justify-center items-center overflow-hidden">
       <div class="flex flex-col md:flex-row">
         <div
-          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300"
+          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300 flex-col flex"
         >
           <h4 class="text-slate-100 text-2xl font-bold mb-2">relate</h4>
-          <p class="text-slate-200 text-sm mb-2">
+          <p class="text-slate-200 text-sm mb-2 card-content">
             a simple, unopinionated object mapper for Spring Data R2DBC, based
             on lc-spring-data-r2dbc.
           </p>
@@ -57,10 +61,10 @@
           >
         </div>
         <div
-          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300"
+          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300 flex-col flex"
         >
           <h4 class="text-slate-100 text-2xl font-bold mb-2">toothpick</h4>
-          <p class="text-slate-200 text-sm mb-2">
+          <p class="text-slate-200 text-sm mb-2 card-content">
             a simple, lightweight dependency injection framework for JVM based languages.
           </p>
           <a
@@ -71,10 +75,10 @@
           >
         </div>
         <div
-          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300"
+          class="bg-zinc-800 px-4 py-4 rounded w-v80 my-3 md:my-0 md:mx-4 md:w-p300 flex-col flex"
         >
           <h4 class="text-slate-100 text-2xl font-bold mb-2">kframe</h4>
-          <p class="text-slate-200 text-sm mb-2">
+          <p class="text-slate-200 text-sm mb-2 card-content">
             a lightweight application framework for Kotlin.
           </p>
           <a
